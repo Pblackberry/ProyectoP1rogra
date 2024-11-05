@@ -9,7 +9,7 @@ using ProyectoP1rogra.Models;
 
 namespace ProyectoP1rogra.Controllers
 {
-    public class InicioSesionsController : Controller
+    public class InicioSesionsController : Controller 
     {
         private readonly GymContext _context;
 
