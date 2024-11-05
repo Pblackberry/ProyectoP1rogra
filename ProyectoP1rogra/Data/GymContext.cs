@@ -13,4 +13,6 @@ using ProyectoP1rogra.Models;
         }
 
         public DbSet<ProyectoP1rogra.Models.Membresias> Membresias { get; set; } = default!;
+
+public DbSet<ProyectoP1rogra.Models.InicioSesion> InicioSesion { get; set; } = default!;
     }

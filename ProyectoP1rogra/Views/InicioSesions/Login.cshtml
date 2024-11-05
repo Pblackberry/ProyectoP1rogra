@@ -1,0 +1,22 @@
+﻿@model ProyectoP1rogra.Models.InicioSesion
+
+<h2>Iniciar Sesión</h2>
+<p>
+    ¿No tienes una cuenta? <a asp-action="Registro" asp-controller="InicioSesions">Regístrate aquí</a>
+</p>
+<form asp-action="Login" method="post">
+    <div>
+        <label for="Correo">Correo</label>
+        <input type="email" name="Correo" required />
+    </div>
+    <div>
+        <label for="contrasena">Contraseña</label>
+        <input type="password" name="contrasena" required />
+    </div>
+    <button type="submit">Ingresar</button>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red;">@ViewBag.Error</p>
+}
