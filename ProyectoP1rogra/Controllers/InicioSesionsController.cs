@@ -191,7 +191,7 @@ namespace ProyectoP1rogra.Controllers
 
             var usuarioExistente = await _context.InicioSesion
                 .FirstOrDefaultAsync(u => u.Correo == inicioSesion.Correo);
-
+             
             if (usuarioExistente != null)
             {
                 ViewBag.Error = "El correo ya está registrado";
