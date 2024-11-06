@@ -197,7 +197,7 @@ namespace ProyectoP1rogra.Controllers
                 ViewBag.Error = "El correo ya está registrado";
                 return View(inicioSesion);
             }
-
+             
 
             if (ModelState.IsValid)
             {
